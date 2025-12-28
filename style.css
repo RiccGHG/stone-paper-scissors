@@ -29,6 +29,15 @@ label {
 }
 .modes img {
   width: 200px;
+  transition: transform 0.4s ease;
+  cursor: pointer;
+}
+.modes img:hover {
+  transform: scale(1.1);
+}
+.modes img:active {
+  transition: transform 0.1s ease;
+  transform: scale(0.9);
 }
 .modes label {
   display: block;
@@ -37,16 +46,4 @@ label {
 h1 {
   text-align: center;
   margin-top: 20px;
-}
-#bg-emoji-layer {
-  position: fixed;
-  inset: 0;
-  pointer-events: none;
-  z-index: 0;
-}
-
-.bg-emoji {
-  position: absolute;
-  font-size: 32px;
-  user-select: none;
 }
