@@ -47,3 +47,43 @@ h1 {
   text-align: center;
   margin-top: 20px;
 }
+
+@media (max-width: 768px) {
+  .modes {
+    margin-top: 40px;
+    gap: 20px;
+    padding: 10px 20px 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .modes img {
+    width: 120px;
+  }
+  
+  label {
+    font-size: 20px;
+    margin-top: 5px;
+  }
+  
+  .modes label {
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .modes {
+    margin-top: 30px;
+    gap: 15px;
+    padding: 10px 15px 15px;
+  }
+  
+  .modes img {
+    width: 100px;
+  }
+  
+  label {
+    font-size: 16px;
+    margin-top: 5px;
+  }
+}
