@@ -1,0 +1,89 @@
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  background: linear-gradient(135deg, green, lightgreen);
+  font-family: system-ui, sans-serif;
+}
+
+label {
+  margin-top: 10px;
+  font-size: 30px;
+  white-space: nowrap;
+  font-weight: 500;
+}
+
+.modes {
+  display: flex;
+  background: white;
+  margin-top: 100px;
+  gap: 50px;
+  padding: 10px 40px 30px;
+  align-items: center;
+  text-align: center;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.8);
+}
+.modes img {
+  width: 200px;
+  transition: transform 0.4s ease;
+  cursor: pointer;
+}
+.modes img:hover {
+  transform: scale(1.1);
+}
+.modes img:active {
+  transition: transform 0.1s ease;
+  transform: scale(0.9);
+}
+.modes label {
+  display: block;
+  margin-bottom: 20px;
+}
+h1 {
+  text-align: center;
+  margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+  .modes {
+    margin-top: 40px;
+    gap: 20px;
+    padding: 10px 20px 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .modes img {
+    width: 120px;
+  }
+
+  label {
+    font-size: 20px;
+    margin-top: 5px;
+  }
+
+  .modes label {
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .modes {
+    margin-top: 30px;
+    gap: 15px;
+    padding: 10px 15px 15px;
+  }
+
+  .modes img {
+    width: 100px;
+  }
+
+  label {
+    font-size: 16px;
+    margin-top: 5px;
+  }
+}
