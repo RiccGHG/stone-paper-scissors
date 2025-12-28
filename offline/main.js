@@ -1,5 +1,7 @@
 console.log("Script runs");
 async function start(bot = false) {
+    const h1 = document.querySelector("h1");
+    h1.textContent = "Select your weapon";
   document.body.style.transition = "background 1s ease";
   document.body.style.background = "linear-gradient(135deg, blue, darkblue)";
   const player1 = await putChoices();
@@ -7,11 +9,13 @@ async function start(bot = false) {
   document.body.style.background =
     "linear-gradient(135deg, rgb(218, 4, 4), rgb(89, 2, 2))";
   if (bot) {
+    h1.textContent = "Wait for the bot";
     await botThinking();
     const botChoose = getOption();
     const playerImg = `../pictures/${player1}.png`;
     const botImg = `../pictures/${botChoose}.png`;
     const winner = decideWinner(player1, botChoose);
+    h1.textContent = "Results!";
     results(playerImg, botImg, bot, winner)
   }
 }
