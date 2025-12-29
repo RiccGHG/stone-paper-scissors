@@ -84,6 +84,12 @@ h1 {
   .modes label {
     margin-bottom: 10px;
   }
+
+  button {
+    width: 100px;
+    height: 35px;
+    font-size: 14px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -100,5 +106,12 @@ h1 {
   label {
     font-size: 16px;
     margin-top: 5px;
+  }
+
+  button {
+    width: 90px;
+    height: 32px;
+    font-size: 12px;
+    margin: 5px;
   }
 }

@@ -128,7 +128,7 @@ function results(player1, player2, bot, winnerObj) {
                 <img src="${player2}">
             </div>
         </div>
-        <div style="display: flex; gap: 20px; justify-content: center; align-items: center; margin-bottom: 10px;">
+        <div style="display: flex; gap: 20px; justify-content: center; align-items: center; flex-wrap: wrap; margin-bottom: 10px;">
             <button onclick="reset(); start(${bot});">Play Again</button>
             <button onclick="reset(); start(${!bot});">${otherOption}</button>
             <button onclick="window.location.href='../'">Back</button>
